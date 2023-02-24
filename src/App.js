@@ -1,25 +1,23 @@
-import logo from './logo.svg';
+//import logo from './logo.svg';
+import styled from 'styled-components';
 import './App.css';
+import LoginPage from './Components/LoginPage';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return(
+    <AppStyled>
+      <LoginPage/>
+    </AppStyled>
+  )
 }
+
+const AppStyled = styled.div`
+display: flex;
+justify-content: space-evenly;
+  background-color: lavender;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+`;
 
 export default App;
